@@ -14,23 +14,16 @@ variable "destination_cidr_block" {
 variable "private_subnet_cidrs" {
   description = "List of private cidrs. Need one per availability zone."
   type = "list"
-  default = []
 }
 
 variable "public_subnet_cidrs" {
   description = "List of public cidrs. Need one per availability zone."
   type = "list"
-  default = []
 }
 
 variable "availability_zones" {
   description = "List of availability zones you want to use."
   type = "list"
-  default = []
 }
 
 variable "depends_id" {}
-
-
-
-

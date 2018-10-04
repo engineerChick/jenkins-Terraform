@@ -8,7 +8,7 @@ resource "aws_vpc" "vpc" {
 }
 
 resource "aws_internet_gateway" "vpc" {
-  vpc_id = "${var.aws_vpc.vpc.id}"
+  vpc_id = "${aws_vpc.vpc.id}"
 
   tags {
       Environment = "${var.environment}"
